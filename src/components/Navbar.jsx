@@ -4,8 +4,6 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -18,6 +16,7 @@ const Navbar = () => {
   const [linkTwo, setLinkTwo] = useState(false);
   const [linkThree, setLinkThree] = useState(false);
   const [linkFour, setLinkFour] = useState(false);
+  const [linkFive, setLinkFive] = useState(false);
   const handleClick = () => setNav(!nav)
 
 
@@ -26,28 +25,36 @@ const Navbar = () => {
     setLinkTwo(false);
     setLinkThree(false);
     setLinkFour(false);
-   
+    setLinkFive(false)
   };
   const handleChangeTwo = () => {
     setLinkOne(false);
     setLinkTwo(true);
     setLinkThree(false);
     setLinkFour(false);
-    
+    setLinkFive(false)
   };
   const handleChangeThree = () => {
     setLinkOne(false);
     setLinkTwo(false);
     setLinkThree(true);
     setLinkFour(false);
-    
+    setLinkFive(false)
   };
   const handleChangeFour = () => {
     setLinkOne(false);
     setLinkTwo(false);
     setLinkThree(false);
     setLinkFour(true);
-    
+    setLinkFive(false)
+  };
+
+  const handleChangeFive = () => {
+    setLinkOne(false);
+    setLinkTwo(false);
+    setLinkThree(false);
+    setLinkFour(false);
+    setLinkFive(true)
   };
 
 const changeOne = () => {
@@ -55,6 +62,7 @@ const changeOne = () => {
   setLinkTwo(false)
   setLinkThree(false)
   setLinkFour(false)
+  setLinkFive(false)
   setNav(!nav)
  
 }
@@ -70,6 +78,7 @@ const changeThree = () => {
   setLinkTwo(false)
   setLinkThree(true)
   setLinkFour(false)
+  setLinkFive(false)
   setNav(!nav)
 }
 const changeFour = () => {
@@ -77,6 +86,16 @@ const changeFour = () => {
   setLinkTwo(false)
   setLinkThree(false)
   setLinkFour(true)
+  setLinkFive(false)
+  setNav(!nav)
+}
+
+const changeFive = () => {
+  setLinkOne(false)
+  setLinkTwo(false)
+  setLinkThree(false)
+  setLinkFour(false)
+  setLinkFive(true)
   setNav(!nav)
 }
 
@@ -132,6 +151,17 @@ const changeFour = () => {
             onClick={handleChangeFour}
           >
             Work
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            style={linkFive ? { color: "#db2777" } : null}
+            onClick={handleChangeFive}
+          >
+            Contact
           </Link>
         </li>
       </ul>
@@ -191,6 +221,17 @@ const changeFour = () => {
             Work
           </Link>
         </li>
+        <li className="py-6 text-4xl">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            style={linkFive ? { color: "#db2777" } : null}
+            onClick={changeFive}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
@@ -215,7 +256,7 @@ const changeFour = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:qasimzadeali4@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=qasimzadeali4@gmail.com" 
               target="_blank"
             >
               Email <HiOutlineMail size={30} />
