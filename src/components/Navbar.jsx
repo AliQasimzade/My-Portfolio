@@ -9,6 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/AQ.webp";
 import { Link } from "react-scroll";
+import "animate.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -173,9 +174,11 @@ const changeFive = () => {
       <ul
         className={
           !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            ? "animate__animated animate__bounceOutRight hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center animate__animated animate__bounceInRight"
         }
+        style={{zIndex:"9"}}
+        
       >
         <li className="py-6 text-4xl">
           <Link
