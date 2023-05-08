@@ -5,16 +5,14 @@ const Footer = () => {
   return (
     <footer
       name="contact"
-      className="p-4 bg-white sm:p-6 dark:bg-gray-900"
-      style={{ backgroundColor: "rgb(10,25,47)" }}
+      className="p-4 bg-[#231f20]  sm:p-6 dark:bg-gray-900"
     >
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
           <a href="/" className="flex items-center">
             <img src={AQ} className="mr-3 h-8" alt="FlowBite Logo" />
             <span
-              className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              style={{ color: "#db2777" }}
+              className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-blue-600"
             >
               My Portfolio
             </span>
@@ -24,8 +22,7 @@ const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span
-          className="text-sm sm:text-center dark:text-gray-400"
-          style={{ color: "#db2777" }}
+          className="text-sm sm:text-center dark:text-gray-400 text-blue-600"
         >
           Contact and Follow Me
         </span>
