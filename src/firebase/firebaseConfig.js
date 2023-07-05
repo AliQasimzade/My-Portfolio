@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 import {getDatabase} from "firebase/database"
 const firebaseConfig = {
-  apiKey: "AIzaSyC0tMX8HcopVgtkJ0jRdP6RbbNPBGnOur8",
-  authDomain: "notifications-981bb.firebaseapp.com",
-  projectId: "notifications-981bb",
-  storageBucket: "notifications-981bb.appspot.com",
-  messagingSenderId: "571033028219",
-  appId: "1:571033028219:web:988dedc1bc45e85a87c4de"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);

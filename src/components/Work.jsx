@@ -2,7 +2,9 @@ import React from "react";
 import Trafalgar from "../assets/Cover.png";
 import Lombard from "../assets/lombard.jpg";
 import Weather from "../assets/weather.webp";
-
+import AvonThumbNail from "../assets/avonThumbnail.jpeg"
+import Restwell from "../assets/restwell.webp"
+import SharkAz from "../assets/sharkaz.jpeg"
 const Work = () => {
   return (
     <div
@@ -22,6 +24,77 @@ const Work = () => {
           <div
             style={{
               backgroundImage:
+                `url(${AvonThumbNail})`,
+            }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+                Avon AZ
+              </span>
+              <div className="pt-8 text-center">
+                <a
+                  href="https://avonaz.net"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Visit
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage:
+                `url(${Restwell})`,
+                backgroundSize: 'contain'
+            }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+              Restwell(App)
+              </span>
+              <div className="pt-8 text-center">
+                <a
+                  href="https://play.google.com/store/search?q=restwell"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Visit
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage:
+                `url(${SharkAz})`,
+                backgroundSize:"contain"
+            }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+               Shark-Sushi
+              </span>
+              <div className="pt-8 text-center">
+                <a
+                  href="https://shark.az/"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Visit
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage:
                 "url(https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/6315f01fe3237b5de3c19bf1/screenshot_2022-09-05-12-48-37-0000.png)",
             }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
@@ -36,7 +109,7 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -53,7 +126,7 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="https://lombard.globalsoft.az/" target="_blank">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -74,35 +147,13 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
             </div>
           </div>
-          <div
-            style={{
-              backgroundImage:
-                "url(https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/632c3bc0c41093074402e423/screenshot_2022-09-22-10-41-08-0000.png)",
-            }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Login-Sign Up
-              </span>
-              <div className="pt-8 text-center">
-                <a
-                  href="https://login-format-app.netlify.app/login"
-                  target="_blank"
-                >
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+         
           <div
             style={{
               backgroundImage:
@@ -121,7 +172,7 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -144,7 +195,7 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -164,7 +215,7 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="https://quiz-timer-app.netlify.app" target="_blank">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -187,7 +238,7 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -207,7 +258,7 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
@@ -229,13 +280,59 @@ const Work = () => {
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Visit
                   </button>
                 </a>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
       </div>
     </div>
   );

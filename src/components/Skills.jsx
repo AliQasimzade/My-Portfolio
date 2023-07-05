@@ -13,6 +13,11 @@ import Redux from "../assets/Redux.png"
 import Recoil from "../assets/Recoil.png"
 import TypeScript from "../assets/typescript.png"
 import ReactNative from "../assets/reactnative.png"
+import MongoDb from "../assets/mongodb.svg"
+import Express from "../assets/express.svg"
+import NodeJs from "../assets/nodejs.svg"
+
+
 
 
 const Skills = () => {
@@ -30,56 +35,69 @@ const Skills = () => {
                   <p className='my-4'>HTML</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={CSS} alt="CSS icon" />
                   <p className='my-4'>CSS</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={JavaScript} alt="JavaScript icon" />
                   <p className='my-4'>JAVASCRIPT</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={ReactImg} alt="React icon" />
                   <p className='my-4'>REACT</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={GitHub} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={GitHub} alt="GitHub icon" />
                   <p className='my-4'>GITHUB</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Bootstrap} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={Bootstrap} alt="Bootstrap icon" />
                   <p className='my-4'>Bootstrap</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={MaterialUI} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={MaterialUI} alt="MaterialUI icon" />
                   <p className='my-4'>Material UI</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={Next} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={Next} alt="Next icon" />
                   <p className='my-4'>Next js</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={TypeScript} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={TypeScript} alt="TypeScript icon" />
                   <p className='my-4'>TypeScript</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={ReactNative} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={ReactNative} alt="ReactNative icon" />
                   <p className='my-4'>React Native</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={Tailwind} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={Tailwind} alt="Tailwind icon" />
                   <p className='my-4'>Tailwind</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={Sass} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={Sass} alt="Sass icon" />
                   <p className='my-4'>Sass</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={Redux} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={Redux} alt="Redux icon" />
                   <p className='my-4'>Redux</p>
               </div>
               <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
-                  <img className='w-30 mx-auto h-20' src={Recoil} alt="HTML icon" />
+                  <img className='w-30 mx-auto h-20' src={Recoil} alt="Recoil icon" />
                   <p className='my-4'>Recoil</p>
+              </div>
+
+              <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={MongoDb} alt="MongoDb icon" />
+                  <p className='my-4'>Mongo DB</p>
+              </div>
+              <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Express} alt="Expresss icon" />
+                  <p className='my-4'>Express js</p>
+              </div>
+              <div className='shadow-md shadow-[#2563eb] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={NodeJs} alt="Node icon" />
+                  <p className='my-4'>Node js</p>
               </div>
           </div>
       </div>
