@@ -1,10 +1,10 @@
-import About from "./components/About";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import About from "./components/About.jsx";
+import Home from "./components/Home.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Skills from "./components/Skills.jsx";
+import Work from "./components/Work.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 import Joyride from 'react-joyride';
 
 const App = () => {
