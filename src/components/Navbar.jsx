@@ -10,7 +10,6 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const handleSetActive = (e) => {
-    console.log(e);
     setNav(false);
   };
 
@@ -185,6 +184,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/aligasimzadeh"
               target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -194,6 +194,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/AliQasimzade"
               target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -203,6 +204,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=qasimzadeali4@gmail.com"
               target="_blank"
+              rel="noreferrer"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -210,8 +212,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/aligasimzadeh/details/featured/1635531841488/single-media-viewer/?profileId=ACoAADRhSgsBHyupHK4q3pT4EfwzSAOk-d_eM4k"
+              href="https://www.linkedin.com/in/aligasimzadeh/details/featured/1726569004863/single-media-viewer/?profileId=ACoAADRhSgsBHyupHK4q3pT4EfwzSAOk-d_eM4k"
               target="_blank"
+              rel="noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

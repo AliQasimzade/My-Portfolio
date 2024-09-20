@@ -17,17 +17,17 @@ const Home = () => {
           className="text-4xl sm:text-6xl text-[#8892b0]"
           style={{ marginTop: "15px" }}
         >
-          I'm Frontend React and Mobile Developer
+          I'm Frontend Developer
         </h2>
         <div>
           <Link
             to="work"
             smooth={true}
             duration={500}
-            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-600 hover:border-blue-600 hover:rounded"
-            style={{ marginTop: "15px", width: "160px", cursor: "pointer" }}
+            className="text-white group border-2 px-6 py-3 my-2 mt-[15px] max-w-[200px] cursor-pointer flex items-center hover:bg-blue-600 hover:border-blue-600 hover:rounded"
+            
           >
-            View Work
+            View my works
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3 " />
             </span>

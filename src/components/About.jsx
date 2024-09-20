@@ -47,22 +47,29 @@ const About = () => {
               .I worked for 4 months at
               <a
                 href="https://globalsoft.az/"
-                class="ml-1 mr-1"
+                className="ml-1 mr-1"
                 style={{ color: "rgb(37, 99, 235)" }}
               >
                 GlobalSoft
               </a>
-              Then,currently, I work as Instructor
+              I worked as Instructor
               <a
                 href="https://rgacademy.org/"
-                class="ml-1"
+                className="ml-1"
                 style={{ color: "rgb(37, 99, 235)" }}
               >
                 RG Academy
               </a>
-              and I work as remote in <a href="https://rgagency.org/"
-                class="ml-1"
+              and I worked as remote in <a href="https://rgagency.org/"
+                className="ml-1"
                 style={{ color: "rgb(37, 99, 235)" }}>RG Agency</a>
+              .Right now I work at <a
+                href="https://globalsoft.az/"
+                className="ml-1 mr-1"
+                style={{ color: "rgb(37, 99, 235)" }}
+              >
+                GlobalSoft
+              </a>
             </p>
           </div>
         </div>

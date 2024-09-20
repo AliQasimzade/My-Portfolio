@@ -1,7 +1,6 @@
-import React, { useState,useRef } from "react";
-import db from "../firebase/firebaseConfig";
-import { ref, update } from "firebase/database";
-import {toast, ToastContainer} from "react-toastify";
+import React, { useState, useRef } from "react";
+
+import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from "@emailjs/browser";
 
@@ -15,29 +14,28 @@ const Contact = () => {
 
   const handleSendMessage = (e) => {
     e.preventDefault();
-    if(!formInputs.name || !formInputs.email || !formInputs.message) {
-        toast.error('Please fill inputs')
-    }else{
-        update(ref(db, formInputs.name), formInputs);
-        emailjs.sendForm('service_eyvo6ys', 'template_i2u8u8j', form.current, '-GawKdftwW1pDhgSY',{
-          name: formInputs.name,
-          user_name: formInputs.name,
-          user_email: formInputs.email,
-          message: formInputs.message
-        }).then(res => {
-          console.log(res.text)
-        }).catch(err => console.log(err.text))
-        toast.success('Succesfully send message !')
+    if (!formInputs.name || !formInputs.email || !formInputs.message) {
+      toast.error('Please fill inputs')
+    } else {
+      emailjs.sendForm('service_eyvo6ys', 'template_i2u8u8j', form.current, '-GawKdftwW1pDhgSY', {
+        name: formInputs.name,
+        user_name: formInputs.name,
+        user_email: formInputs.email,
+        message: formInputs.message
+      }).then(res => {
+        console.log(res.text)
+      }).catch(err => console.log(err.text))
+      toast.success('Succesfully send message !')
     }
-   
+
   };
   return (
     <div
       className="w-full h-screen bg-[#231f20] flex justify-center items-center p-4"
     >
-        <ToastContainer position="top-center"/>
+      <ToastContainer position="top-center" />
       <form
-      ref={form}
+        ref={form}
         className="flex flex-col max-w-[1000px] w-full"
         onSubmit={handleSendMessage}
       >
@@ -80,7 +78,7 @@ const Contact = () => {
           }
         ></textarea>
         <button
-        type="submit"
+          type="submit"
           className="text-white border-2 hover:bg-blue-600 hover:rounded hover:border-blue-600 px-4 py-3 my-8 mx-auto flex items-center transition linear"
         >
           Send message
